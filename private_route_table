@@ -1,0 +1,7 @@
+resource "aws_route_table" "proj18_prod-priv-route-table" {
+  vpc_id = aws_vpc.proj18_vpc_1.id
+
+  tags = {
+    Name = "proj18_prod-pub-route-table"
+  }
+}
